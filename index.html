@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Password Generator</title>
+</head>
+<body>
+    <div class="main-card">
+
+        
+                <div class="hero-card">
+                    <h1 id="first-h1">Generate a</h1>
+                    <h1 id="second-h1">random password</h1>
+                    <p>Never use na insecure password again</p>
+
+
+                    <div class="Length">
+                        <label for="pass-length">Password Length :</label>  
+                        <input type="number" placeholder="Enter Password length" id="pass-length">
+                        
+                       <p id="pass-handle"></p>
+                        
+                    </div>
+                <div class="btn-checkbox">
+                    <div class="button-div">
+                        <button onclick="GeneratePassword()">Generate Password</button>
+                    </div>
+                    <div class="checkbox-div">
+                       
+                         <label class="label"><input type="checkbox" id="checksymbol">include Symbol</label>
+                         <label class="label"><input type="checkbox" id="checknumber">include Number</label>
+                        
+                    </div>
+                </div>
+                </div>
+                <hr>
+                <div class="password-box">
+                    <div class="pass" id="pass1" onclick="copyPassword1()"></div>
+                    <div class="pass" id="pass2" onclick="copyPassword2()"></div>
+                </div>
+                <p id="copy-pass"></p>
+        
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
